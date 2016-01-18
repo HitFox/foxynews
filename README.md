@@ -1,6 +1,6 @@
 ![alt text](http://www.hitfoxgroup.com/downloads/hitfox_logo_with_tag_two_colors_WEB.png "Logo Hitfox Group")
 
-Foxynew
+Foxynews
 ==============
 
 [![Build Status](https://img.shields.io/travis/HitFox/foxynews.svg?style=flat-square)](https://travis-ci.org/HitFox/foxynews)
@@ -64,7 +64,7 @@ Changelog
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/HitFox/cm-sms-rails. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/HitFox/foxynews. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 
 ## License
