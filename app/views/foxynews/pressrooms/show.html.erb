@@ -3,19 +3,19 @@
 
 <div class='press-release'>
   <% @press_release.parsed_content.each do |content_block| %>
-    <% if content_block['type'] == 'textarea' %>
-      <%= content_block['data']['body'].html_safe %>
+    <% if content_block['type'] == 'text' %>
+      <p><%= content_block['data']['text'].html_safe %></p>
     <% elsif content_block['type'] == 'quote' %>
       <div class='block-quote'>
         <%= content_block['data']['quote'].html_safe %>
         <span class='cite'><%= (content_block['data'].has_key? 'cite') ? content_block['data']['cite'].html_safe : '' %></span>
       </div>
-    <% elsif content_block['type'] == 'media' %>
-      <% content_block['data']['json'].each do |media| %>
+    <% elsif content_block['type'] == 'media_collection' %>
+      <% content_block['data']['items'].each do |media| %>
         <img src=<%= media['sizes']['medium']['url'] %> width=<%= media['sizes']['medium']['width'] %> height=<%= media['sizes']['medium']['height'] %> alt=<%= media['sizes']['title'] %>/>
       <% end %>
+    <% elsif content_block['type'] == 'media_item' %>
+      <img src=<%= content_block['data']['item']['sizes']['medium']['url'] %> width=<%= content_block['data']['item']['sizes']['medium']['width'] %> height=<%= content_block['data']['item']['sizes']['medium']['height'] %> alt=<%= content_block['data']['item']['sizes']['title'] %>/>
     <% end %>
   <% end %>
 </div>
-
-
